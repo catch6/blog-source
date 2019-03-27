@@ -4,4 +4,5 @@ layout: books
 comments: false
 sidebar: none
 translate_title: book-list
+hidden: true
 ---

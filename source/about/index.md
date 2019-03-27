@@ -4,7 +4,8 @@ layout: about
 comments: true
 sidebar: custom
 translate_title: 'on'
-description:
+description: 个人简介
+excerpt: 
 ---
 
 ```java

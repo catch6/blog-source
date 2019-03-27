@@ -1,7 +1,7 @@
 ---
-title: 友情链接
+title: 友链
 layout: links
 comments: true
 sidebar: none
-translate_title: links
+translate_title: friend-chain
 ---
