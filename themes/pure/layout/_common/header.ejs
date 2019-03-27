@@ -25,7 +25,7 @@
         <% for (var i in theme.menu){ %>
         <% var itemName = i.toLowerCase(); %>
         <li class="menu-item menu-item-<%= itemName %>">
-          <a href="<%- url_for(theme.menu[i]) %>">
+          <a href="<%- url_for(theme.menu[i]) %>/index.html">
             <% if(theme.menu_icons.enable) { %>
             <i class="icon <%= theme.menu_icons[itemName] %>"></i>
             <% } %>
