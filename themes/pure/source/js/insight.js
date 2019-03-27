@@ -20,7 +20,7 @@
             .append($('<header>').append($('<i>').addClass('icon').addClass('icon-' + icon)).append(title != null && title != '' ? title : CONFIG.TRANSLATION['UNTITLED'])
                 .append(slug ? $('<span>').addClass('ins-slug').text(slug) : null))
             .append(preview ? $('<p>').addClass('ins-search-preview').text(preview) : null)
-            .attr('data-url', url);
+            .attr('data-url', url.endWith('index.html')?url:url+'index');
     }
 
     function sectionFactory (type, array) {
