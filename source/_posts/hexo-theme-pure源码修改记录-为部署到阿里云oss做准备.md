@@ -2,7 +2,6 @@
 title: hexo-theme-pure源码修改记录--为部署到阿里云oss做准备
 tags:
   - hexo
-originContent: ''
 categories:
   - 工作笔记
 toc: false
@@ -30,5 +29,6 @@ date: 2019-03-27 23:41:06
 \themes\pure\layout\category.ejs
 \themes\pure\layout\tag.ejs
 \themes\pure\layout\tags.ejs
-```
 
+\themes\pure\source\js\insight.js
+```
