@@ -4,12 +4,12 @@ layout: about
 comments: true
 sidebar: custom
 translate_title: 'on'
-description: 个人简介
-excerpt: 
+description: 士不可以不弘毅，任重而道远。
 ---
 
 ```java
 public class Me {
+
     private String name = "Catch";
     private int age = 27;
     private String gender = "男";
@@ -22,8 +22,17 @@ public class Me {
     private String email = "catchlife6@163.com";
     private String description = "一个专注于编程技术的宅男";
 
-    private String[][] skills = {{"Java", "Spring", "JFinal"}, {"HTML", "Javascript", "CSS3", "Vue.js"}, {"Python"}};
+    private String[] skills = {
+        "Java", "Spring", "JFinal",
+        "HTML", "Javascript", "CSS3", "Vue.js",
+        "Python"
+    };
 
-    private String[] devTools = {"IDEA", "WebStorm", "Pycharm", "VSCode", "Sublime Text3", "HediSQL", "Jetty", "Tomcat"};
+    private String[] devTools = {
+        "IDEA", "WebStorm", "Pycharm",
+        "VSCode", "Sublime Text3", "HediSQL",
+        "Jetty", "Tomcat"
+    };
+
 }
 ```
