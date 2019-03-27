@@ -16,7 +16,7 @@ cache:
 before_install:
   - wget http://gosspublic.alicdn.com/ossutil/1.5.0/ossutil64
   - chmod 755 ossutil64
-  - ./ossutil config -e ${ENDPOINT} -i ${ACCESS_KEY_ID} -k ${ACCESS_KEY_SECRET}
+  - ./ossutil64 config -e ${ENDPOINT} -i ${ACCESS_KEY_ID} -k ${ACCESS_KEY_SECRET}
   - npm install -g hexo-cli
 
 # 安装依赖
@@ -36,5 +36,5 @@ after_success:
   # 替换同目录下的_config.yml文件中GH_TOKEN字符串为travis后台配置的变量
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy
-  - ./ossutil rm oss://catch-wenzuo-net/ -r
-  - ./ossutil cp -rf public/ oss://catch-wenzuo-net/
+  - ./ossutil64 rm oss://catch-wenzuo-net/ -r
+  - ./ossutil64 cp -rf public/ oss://catch-wenzuo-net/
