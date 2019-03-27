@@ -36,5 +36,5 @@ after_success:
   # 替换同目录下的_config.yml文件中GH_TOKEN字符串为travis后台配置的变量
   - sed -i "s/GH_TOKEN/${GH_TOKEN}/g" ./_config.yml
   - hexo deploy
-  - ./ossutil64 rm oss://catch-wenzuo-net/ -r
+  - ./ossutil64 rm -rf oss://catch-wenzuo-net/
   - ./ossutil64 cp -rf public/ oss://catch-wenzuo-net/
