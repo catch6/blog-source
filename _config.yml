@@ -104,11 +104,3 @@ translate_title:
   youdao_keyfrom: XXX
   is_need_proxy: false #true | false
   proxy_url: http://127.0.0.1:1080
-
-jsonContent:
-  ignore:
-    paths:
-      - 404
-      #- .ext # a file extension
-    tags:
-      #- tag1
