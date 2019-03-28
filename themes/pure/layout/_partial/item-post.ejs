@@ -1,5 +1,5 @@
 <% if (type == 'link'){ %>
-<a href="<%- url_for(post.path) %>index.html" class="collection-item" target="_blank" itemprop="url">
+<a href="<%- url_for(post.path) %>" class="collection-item" target="_blank" itemprop="url">
   <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
   <span>&nbsp;&nbsp;&nbsp;</span> <%= post.title %>
 </a>
@@ -10,13 +10,13 @@
        <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
      </div>
      <h3 class="article-title" itemprop="name">
-       <a class="article-link" href="<%- url_for(post.path) %>index.html"><%= post.title %></a>
+       <a class="article-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
      </h3>
    </div>
    <% if (post.tags){ %>
    <div class="panel-footer">
      <% post.tags.limit(3).each(function (tag) { %>
-      <a href="<%- url_for(tag.path) %>index.html" class="label label-default mb"><%= tag.name %></a>
+      <a href="<%- url_for(tag.path) %>" class="label label-default mb"><%= tag.name %></a>
      <% }); %>
      <% if (post.tags.length > 3){ %>
       <span class="label label-default mb">···</span>
@@ -25,7 +25,7 @@
    <% } %>
 </article>
 <% } else { %>
-<a href="<%- url_for(post.path) %>index.html" class="collection-item" target="_blank" itemprop="url">
+<a href="<%- url_for(post.path) %>" class="collection-item" target="_blank" itemprop="url">
   <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date) %></time>
   <span>&nbsp;&nbsp;&nbsp;</span> <%= post.title %>
 </a>

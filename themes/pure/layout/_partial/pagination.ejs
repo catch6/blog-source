@@ -30,7 +30,7 @@
             </li>
             <% } else { %>
             <li class="prev">
-                <a href="<%- url_for(page.prev_link) %>index.html">
+                <a href="<%- url_for(page.prev_link) %>">
                     <i class="icon icon-angle-left"></i>
                     <%= __('pagination.prev') %>
                 </a>
@@ -45,7 +45,7 @@
             </li>
             <% } else { %>
             <li class="next">
-                <a href="<%- url_for(page.next_link) %>index.html">
+                <a href="<%- url_for(page.next_link) %>">
                     <%= __('pagination.next') %>
                     <i class="icon icon-angle-right"></i>
                 </a>
